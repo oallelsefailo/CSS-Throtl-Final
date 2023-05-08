@@ -1,0 +1,396 @@
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  letter-spacing: 0.06rem;
+  overflow-wrap: break-word;
+}
+
+/* END RESET */
+
+.promo {
+  text-align: center;
+  background-color: red;
+  color: white;
+}
+
+/* NAV BEGINS */
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-right: 20px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+input[type="text"] {
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  width: 650px;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.right-nav span {
+  padding: 0 15px;
+}
+
+.fa-solid,
+.fa-regular {
+  font-size: 20px;
+}
+
+/* NAV ENDS */
+
+/* HERO CONTAINER BEGINS */
+
+.hero-image-container {
+  position: relative;
+  text-align: center;
+}
+
+.hero-image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 19%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 2em;
+  padding: 2rem;
+  width: 40%;
+  height: 100%;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.hero-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 6%;
+  background-color: rgba(0, 0, 0, 0.4);
+  transform: skewX(-15deg);
+  transform-origin: left;
+  z-index: -1;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.hero-text p {
+  font-size: 1.5em;
+}
+
+.hero-text button {
+  font-size: 1.2em;
+  padding: 0.75em 1.75em;
+  border: none;
+  background-color: #ff5e14;
+  color: white;
+  cursor: pointer;
+}
+
+/* HERO CONTAINER ENDS */
+
+/* SELECT MODEL STARTS */
+
+.vehicle-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f5f7;
+  padding: 15px 0;
+  margin-bottom: 25px;
+}
+
+.vehicle-select-text {
+  font-size: 18px;
+  font-weight: 700;
+  font-style: italic;
+}
+.vehicle-select select {
+  height: 35px;
+  width: 140px;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  padding: 0 20px;
+  margin: 0 10px;
+  border-radius: 0;
+  border: 1px solid black;
+  transform: skewX(-17deg);
+}
+
+.vehicle-select button {
+  width: 7%;
+  height: 35px;
+  min-width: 170px;
+  background-color: #ff3c1f;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 2px;
+  border: none;
+}
+
+/* SELECT MODEL ENDS */
+
+/* CATEGORY STARTS */
+
+.category {
+  padding: 0px 60px;
+}
+
+.img-category {
+  text-align: center;
+  font-weight: 600;
+  margin: 0px 10px;
+  background-color: #f2f5f7;
+}
+
+/* CATEGORY ENDS */
+
+/* INTRO STARTS */
+
+.fromGarage {
+  position: relative;
+  margin-top: 10px;
+}
+
+.fromGarage div:first-child {
+  position: relative;
+}
+
+.fromGarage div:last-child {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translateY(-50%);
+  padding: 20px;
+  width: 30%;
+}
+
+.fromGarage h2 {
+  font-weight: 700;
+  font-size: 1.8em;
+  margin: 24px 0;
+}
+
+.fromGarage h3 {
+  font-weight: 700;
+  font-size: 1em;
+  font-style: italic;
+  text-transform: uppercase;
+  margin: 16px 0;
+}
+
+.fromGarage p {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.fromGarage button {
+  min-width: 200px;
+  background-color: #ff3c1f;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 2px;
+  border: none;
+  padding: 5px;
+}
+
+/* MEDIA QUERY FOR INTRO STARTS */
+
+@media (max-width: 1470px) {
+  .fromGarage div:last-child {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 920px) {
+  .fromGarage div:last-child {
+    position: static;
+    width: 100%;
+    margin-top: 90px;
+  }
+}
+
+@media (max-width: 489px) {
+  .fromGarage div:last-child {
+    position: static;
+    width: 100%;
+    margin-top: 110px;
+  }
+}
+/* MEDIA QUERIES FOR INTRO ENDS */
+
+/* INTRO ENDS */
+
+/* FOOTER STARTS */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #121212;
+  padding: 50px 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+
+.footer-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 650px;
+  text-align: right;
+}
+
+.footer-links li {
+  color: #c3c3c3;
+  text-align: left;
+  width: 20%;
+  white-space: nowrap;
+}
+
+.footer-links::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -150px;
+  width: 1px;
+  height: 100%;
+  background-color: white;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  margin-right: 100px;
+}
+
+.newsletter h2 {
+  font-size: 1.2rem;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.newsletter input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c4c4c4;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+/* FOOTER ENDS */
