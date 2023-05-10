@@ -36,6 +36,8 @@ select {
   font: inherit;
 }
 
+/* END RESET */
+
 p,
 h1,
 h2,
@@ -47,8 +49,6 @@ h6 {
   letter-spacing: 0.06rem;
   overflow-wrap: break-word;
 }
-
-/* END RESET */
 
 .promo {
   text-align: center;
